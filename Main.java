@@ -8,7 +8,7 @@ public class Main {
         };
 
         // Ordenar empleados por id usando QuickSort
-        QuickSort.quickSort(empleados, 0, empleados.length - 1);
+        Empleado.QuickSort.quickSort(empleados, 0, empleados.length - 1);
 
         // Imprimir empleados ordenados
         System.out.println("Empleados ordenados por ID:");
@@ -18,7 +18,7 @@ public class Main {
 
         // Buscar un empleado por id usando búsqueda binaria
         int idABuscar = 2;
-        int indice = BusquedaBinaria.busquedaBinaria(empleados, idABuscar);
+        int indice = Empleado.BusquedaBinaria.busquedaBinaria(empleados, idABuscar);
         if (indice != -1) {
             System.out.println("Empleado encontrado: " + empleados[indice]);
         } else {
